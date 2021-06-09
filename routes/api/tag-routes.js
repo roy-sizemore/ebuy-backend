@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Product,
-        through: ProductTag,
+        as: ProductTag,
       }
     ]
   }).then((tags) => res.status(200).json(tags))
@@ -30,11 +30,10 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Product,
-        through: ProductTag,
+        as: ProductTag,
       }
     ]
-  })
-    .then((tag) => res.status(200).json(tag))
+  }).then((tag) => res.status(200).json(tag))
     .catch((err) => {
       console.error(err);
       res.status(500).json(err);
@@ -43,8 +42,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
-  Tag.create(req.body).then((tag) => res.status(200).json(tag))
-  .catch((err) => {
+  Tag.create(req.body).then((tag) => res.status(200).json(tag)).catch((err) => {
     console.error(err);
     res.status(500).json(err);
   });

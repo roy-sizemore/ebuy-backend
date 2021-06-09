@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       Category,
       {
         model: Tag,
-        through: ProductTag,
+        as: ProductTag,
       }
     ]
   }).then((products) => res.json(products))
@@ -34,7 +34,7 @@ router.get('/:id', (req, res) => {
       Category,
       {
         model: Tag,
-        through: ProductTag,
+        as: ProductTag,
       }
     ]
   }).then((products) => res.json(products))
@@ -46,6 +46,8 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
+  console.log(req.body)
+
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -68,8 +70,7 @@ router.post('/', (req, res) => {
       }
       // if no product tags, just respond
       res.status(200).json(product);
-    })
-    .then((productTagIds) => res.status(200).json(productTagIds))
+    }).then((productTagIds) => res.status(200).json(productTagIds))
     .catch((err) => {
       console.error(err);
       res.status(400).json(err);
