@@ -47,4 +47,4 @@
   GitHub: [roy-sizemore](https://github.com/roy-sizemore/)
 
 ## **Demo** (click to enlarge)
-  <br><link rel="https://github.com/roy-sizemore/screenshots/blob/main/ebuy_backend_demo.mp4">
+  <br><a href="https://github.com/roy-sizemore/screenshots/blob/main/ebuy_backend_demo.mp4">Demo</a>
