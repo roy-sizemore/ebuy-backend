@@ -47,5 +47,5 @@
   GitHub: [roy-sizemore](https://github.com/roy-sizemore/)
 
 ## **Demo** (click to enlarge)
-  <br><img src="https://github.com/roy-sizemore/screenshots/blob/main/readu2readme.gif" alt="demo" width="400px">
+  <br><img src="https://github.com/roy-sizemore/screenshots/blob/main/ebuy_backend_demo.gif" alt="demo" width="400px">
   <br><a href="https://github.com/roy-sizemore/screenshots/blob/main/ebuy_backend_demo.mp4">Download Demo Video</a>
